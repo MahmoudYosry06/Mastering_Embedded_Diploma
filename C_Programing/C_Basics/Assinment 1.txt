@@ -32,6 +32,16 @@ int main(void) {
 Ex3 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int x ,y ;
+	printf("Enter two Integers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d",&x,&y);
+	printf("the result is = %d",(x+y));
+}
 
 ###################
 ###################
