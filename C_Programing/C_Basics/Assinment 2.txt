@@ -1,0 +1,226 @@
+Ex1 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int x;
+	printf("Enter an Integer you want to check: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&x);
+	if(x%2==0)
+		printf("%d is even.",x);
+	else printf("%d is odd.",x);
+}
+
+###################
+###################
+
+65->90 consonant
+97->122 vowel
+
+Ex2 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	char x;
+	printf("Enter a character: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&x);
+	if(x<=90 && x>=65)
+		printf("%c is a consonant",x);
+	else if (x<=122 && x>=97)
+		printf("%c is a vowel",x);
+}
+
+###################
+###################
+
+Ex3 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float x,y,z;
+	printf("Enter three numbers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f %f %f",&x,&y,&z);
+	if(x>y && x>z)
+	{
+		printf("Largest number = %f",x);
+	}
+
+	else if (y>x && y>z)
+	{
+		printf("Largest number = %f",y);
+	}
+
+	else if (z>x && z>y)
+	{
+		printf("Largest number = %f",z);
+	}
+	else printf("they all equals");
+}
+
+
+###################
+###################
+
+Ex4 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float x;
+	printf("Enter a number: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&x);
+	if(x>0)
+	{
+		printf("%f is positive.",x);
+	}
+
+	else if (x<0)
+	{
+		printf("%f is negative.",x);
+	}
+
+	else printf("You entered zero.");
+}
+
+###################
+###################
+
+Ex5 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	char x;
+	printf("Enter a character: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&x);
+	if((x<=90 && x>=65) || (x<=122 && x>=97))
+		printf("%c is an alphabet",x);
+	else
+		printf("%c is not an alphabet",x);
+}
+
+###################
+###################
+
+Ex6 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int x,sum=0;
+	printf("Enter an Integer: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&x);
+	int i;
+	for(i=1 ; i<=x ; i++)
+	{
+		sum+=i;
+	}
+	printf("Sum= %d",sum);
+}
+
+###################
+###################
+
+Ex7 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int x,fatctorial=1;
+	printf("Enter an Integer: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d",&x);
+	int i;
+	if(x>0)
+	{
+		for(i=1 ; i<=x ; i++)
+		{
+			fatctorial*=i;
+		}
+		printf("Factorial= %d",fatctorial);
+	}
+	else if (x<0)
+		printf ("Error!!! Factorial of Negative number doesn't exist");
+	else
+		printf("Factorial= 1");
+}
+
+###################
+###################
+
+Ex8 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	float x,y;
+	char op;
+	printf("Enter Operator either + or - or * or /: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&op);
+	printf("Enter two operands: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f %f",&x,&y);
+	switch(op)
+	{
+	case '+':
+		printf("%f %c %f = %f",x,op,y,(x+y));
+		break;
+
+	case '-':
+		printf("%f %c %f = %f",x,op,y,(x-y));
+		break;
+
+	case '*':
+		printf("%f %c %f = %f",x,op,y,(x*y));
+		break;
+
+	case '/':
+	{
+		if(y==0)
+			printf("Can't divide over zero");
+		else
+			printf("%f %c %f = %f",x,op,y,(x/y));
+	}
+	break;
+
+	default:
+		printf("Error!! The operator is wrong");
+		break;
+	}
+}
+
+###################
+###################
