@@ -49,6 +49,16 @@ int main(void) {
 Ex4 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float x ,y ;
+	printf("Enter two Integers: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f %f",&x,&y);
+	printf("the result is = %f",(x*y));
+}
 
 ###################
 ###################
@@ -56,6 +66,16 @@ Ex4 ###############
 Ex5 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	char x;
+	printf("Enter a character: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c",&x);
+	printf("ASCII value of %c = %d",x,x);
+}
 
 ###################
 ###################
@@ -63,6 +83,22 @@ Ex5 ###############
 Ex6 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float x,y,temp;
+	printf("Enter value of a: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&x);
+	printf("Enter value of b: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&y);
+	temp = x;
+	x=y;
+	y=temp;
+	printf("After swapping, value of a = %f \nAfter swapping, value of b = %f",x,y);
+}
 
 ###################
 ###################
@@ -70,6 +106,22 @@ Ex6 ###############
 Ex7 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	float x,y;
+	printf("Enter value of a: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&x);
+	printf("Enter value of b: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%f",&y);
+	x+=y;
+	y=x-y;
+	x-=y;
+	printf("After swapping, value of a = %f \nAfter swapping, value of b = %f",x,y);
+}
 
 ###################
 ###################
