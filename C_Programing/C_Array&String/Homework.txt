@@ -9,7 +9,7 @@ Ex1 ###############
 
 int main(void) {
 
-	float matrix_1[2][2],matrix_2[2][2],sum[2][2];
+	float matrix_1[2][2],matrix_2[2][2];
 	printf("Enter the elements of 1st matrix \n");
 	int i,j;
 	for(i=0;i<2;i++)
@@ -52,7 +52,31 @@ int main(void) {
 Ex2 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void) {
+
+	int in_array;
+	printf("Enter the number of data: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&in_array);
+	float array[in_array];
+	int i;
+	for(i=0; i<in_array ;i++ )
+	{
+		printf("%d. Enter number: ",i+1);
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&array[i]);
+	}
+	float Average =0;
+	for(i=0; i<in_array ;i++ )
+		{
+			Average += array[i];
+		}
+	printf("Average = %0.2f",Average/in_array);
+
+}
 
 ###################
 ###################
