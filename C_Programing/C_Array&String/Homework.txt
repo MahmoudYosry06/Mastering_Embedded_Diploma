@@ -146,6 +146,46 @@ int main(void) {
 Ex4 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int in_arr;
+	printf("Enter no of elements : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&in_arr);
+
+	float array[in_arr];
+	int i;
+	for(i=0;i<in_arr;i++)
+	{
+		printf("Enter element: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&array[i]);
+	}
+
+	float n;
+	printf("Enter the elements to be inserted : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&n);
+
+	int new_in;
+	printf("Enter the location : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&new_in);
+
+	for(i=in_arr;i>(new_in-1);i--)
+	{
+		array[i]=array[i-1];
+	}
+	array[new_in-1]=n;
+
+	for(i=0;i<(in_arr+1);i++)
+	{
+		printf("%0.2f \t",array[i]);
+	}
+}
 
 
 ###################
