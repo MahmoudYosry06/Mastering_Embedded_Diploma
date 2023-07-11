@@ -231,7 +231,39 @@ int main(void) {
 ###################
 ###################
 
-Ex6 ###############
+
+
+#### Strings HW ###
+Ex1 ###############
+###################
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	char array[100];
+	printf("Enter a string : ");
+	fflush(stdin);fflush(stdout);
+	gets(array);
+
+	char freq;
+	printf("Enter a character to find frequency: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%c",&freq);
+	int i,x=0;
+	for(i=0;array[i]!=0;i++)
+	{
+		if(array[i]==freq)
+			x++;
+	}
+	printf("frequency of %c = %d",freq,x);
+}
+
+###################
+###################
+
+Ex2 ###############
 ###################
 
 
@@ -239,15 +271,7 @@ Ex6 ###############
 ###################
 ###################
 
-Ex7 ###############
-###################
-
-
-
-###################
-###################
-
-Ex8 ###############
+Ex3 ###############
 ###################
 
 
