@@ -266,7 +266,23 @@ int main(void) {
 Ex2 ###############
 ###################
 
+include <stdio.h>
+#include <stdlib.h>
 
+int main(void) {
+
+	char array[100];
+	printf("Enter a string : ");
+	fflush(stdin);fflush(stdout);
+	gets(array);
+
+	int i,x=0;
+	for(i=0;array[i]!=0;i++)
+	{
+			x++;
+	}
+	printf("Length of string: %d",x);
+}
 
 ###################
 ###################
@@ -274,7 +290,23 @@ Ex2 ###############
 Ex3 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
 
+int main(void) {
+
+	char array[100];
+	printf("Enter a string : ");
+	fflush(stdin);fflush(stdout);
+	gets(array);
+
+	int i,x=0;
+	printf("Reverse string is: ");
+	for(i=strlen(array)-1;i>=0;i--)
+	{
+			printf("%c",array[i]);
+	}
+}
 
 ###################
 ###################
