@@ -194,12 +194,46 @@ int main(void) {
 Ex5 ###############
 ###################
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	int in_arr;
+	printf("Enter no of elements : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&in_arr);
+
+	float array[in_arr];
+	int i;
+	for(i=0;i<in_arr;i++)
+	{
+		printf("Enter element: ");
+		fflush(stdin); fflush(stdout);
+		scanf("%f",&array[i]);
+	}
+
+	float n;
+	printf("Enter the elements to be searched : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%f",&n);
+
+	for(i=0;i<in_arr;i++)
+	{
+		if(array[i]==n)
+		{
+			printf("Number found at the location = %d",i+1);
+			break;
+		}
+	}
+}
 
 ###################
 ###################
 
 Ex6 ###############
 ###################
+
 
 
 ###################
